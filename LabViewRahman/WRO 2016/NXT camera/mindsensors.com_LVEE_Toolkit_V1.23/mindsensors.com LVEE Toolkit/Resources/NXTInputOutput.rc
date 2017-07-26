@@ -1,0 +1,425 @@
+RCversion: 3
+include: "NXTInputOutput.rch"
+
+///// NXTInput Class Definition /////
+class: NXTInput
+genericType: NXTInputOutput
+refnum: GenericTag
+passAttributeError: none
+setFunction: set_NXTInputIOProp
+getFunction: get_NXTInputProp
+library: NXTInputOutput.*
+className: NXTInput
+flags: 0
+
+attribute: Port
+  Port
+  uB  writeonly 5 0
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: SensorType
+  SensorType
+  uB  readwrite 5 1
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: SensorMode
+  SensorMode
+  uB  readwrite 5 2
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Raw
+  Raw
+  uW  readonly  5 3
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Normalized
+  Normalized
+  uW  readonly  5 4
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Scaled
+  Scaled
+  iW  readwrite  5 5
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: InvalidData
+  InvalidData
+  bool readwrite 5 6
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+///// NXTOutput Class Definition /////
+class: NXTOutput
+genericType: NXTInputOutput
+refnum: GenericTag
+passAttributeError: none
+setFunction: set_NXTOutputProp
+getFunction: get_NXTOutputProp
+library: NXTInputOutput.*
+className: NXTOutput
+flags: 0
+
+attribute: Port
+  Port
+  uB  writeonly 5 0
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: UpdateFlags
+  UpdateFlags
+  uB  readwrite 5 1
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Mode
+  Mode
+  uB  readwrite 5 2
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Power
+  Power
+  iB  readwrite 5 3
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: ActualSpeed
+  ActualSpeed
+  iB  readonly  5 4
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: TachoCount
+  TachoCount
+  iL  readonly  5 5
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: TachoLimit
+  TachoLimit
+  uL  readwrite 5 6
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegPValue
+  RegPValue
+  uB  readwrite 5 7
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegIValue
+  RegIValue
+  uB  readwrite 5 8
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegDValue
+  RegDValue
+  uB  readwrite 5 9
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RunState
+  RunState
+  uB  readwrite 5 10
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: TurnRatio
+  TurnRatio
+  iB  readwrite 5 11
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegMode
+  RegMode
+  uB readwrite 5 12
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Overload
+  Overload
+  bool readonly 5 13
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: BlockTachoCount
+  BlockTachoCount
+  iL  readonly  5 14
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RotationCount
+  RotationCount
+  iL  readonly  5 15
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+///// NXTOutputMulti Class Definition /////
+class: NXTOutputMulti
+genericType: NXTInputOutput
+refnum: GenericTag
+passAttributeError: none
+setFunction: set_NXTOutputMultiProp
+getFunction: get_NXTOutputMultiProp
+library: NXTInputOutput.*
+className: NXTOutputMulti
+flags: 0
+
+attribute: PortList
+  PortList
+  array {1, uB} writeonly 5 0
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: UpdateFlags
+  UpdateFlags
+  uB  writeonly 5 1
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Mode
+  Mode
+  uB  writeonly 5 2
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: Power
+  Power
+  iB  writeonly 5 3
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: TachoLimit
+  TachoLimit
+  uL  writeonly 5 4
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegPValue
+  RegPValue
+  uB  writeonly 5 5
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegIValue
+  RegIValue
+  uB  writeonly 5 6
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegDValue
+  RegDValue
+  uB  writeonly 5 7
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RunState
+  RunState
+  uB  writeonly 5 8
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: TurnRatio
+  TurnRatio
+  iB  writeonly 5 9
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+attribute: RegMode
+  RegMode
+  uB writeonly 5 10
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this property."
+
+///// NXTSystemCall Class Definition /////
+class: NXTSystemCall
+genericType: NXTInputOutput
+passAttributeError: none
+setFunction: set_NXTSysCall
+getFunction: get_NXTSysCall
+library: NXTInputOutput.*
+className: NXTSystemCall
+flags: 0
+
+method: NXTFileOpenRead NXTFileOpenRead returnValue 0 0 4 
+  NXTFileOpenRead numeric uInt16  reference
+  "File Handle" numeric uInt8 reference
+  Filename  string  CStr  in
+  Length  numeric uInt32  reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileOpenWrite  NXTFileOpenWrite  returnValue 1 0 4 
+  NXTFileOpenWrite  numeric uInt16  reference
+  "File Handle" numeric uInt8 reference
+  Filename  string  CStr  in
+  Length  numeric uInt32  refInOut
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileRead NXTFileRead returnValue 2 0 4 
+  NXTFileRead numeric uInt16  reference
+  "File Handle" numeric uInt8 refInOut
+  Buffer  string  CStr  out
+  Length  numeric uInt32  refInOut
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileWrite  NXTFileWrite  returnValue 3 0 4 
+  NXTFileWrite  numeric uInt16  reference
+  "File Handle" numeric uInt8 refInOut
+  Buffer  string  CStr  inout
+  Length  numeric uInt32  refInOut
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileClose  NXTFileClose  returnValue 4 0 2 
+  NXTFileClose  numeric uInt16  reference
+  "File Handle" numeric uInt8 value
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTSoundPlayFile  NXTSoundPlayFile  returnValue 5 0 4 
+  NXTSoundPlayFile  numeric int8  reference
+  Filename  string  CStr  in
+  Loop? bool in
+  Volume numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawText NXTDrawText returnValue 6 3 4 
+  NXTDrawText numeric int8  reference
+  Location  cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Text  string  CStr  in
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawPoint  NXTDrawPoint  returnValue 7 2 3 
+  NXTDrawPoint  numeric int8  reference
+  Location  cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawLine NXTDrawLine returnValue 8 3 4 
+  NXTDrawLine numeric int8  reference
+  StartLocation cluster {2, "X" = iW, "Y" = iW}  refInOut
+  EndLocation cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawCircle NXTDrawCircle returnValue 9 3 4 
+  NXTDrawCircle numeric int8  reference
+  Center  cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Radius  numeric uInt8 value
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTReadButton NXTReadButton returnValue 10  1 5 
+  NXTReadButton numeric int8  reference
+  Index numeric uInt8 value
+  Pressed bool  reference
+  Count numeric uInt8 reference
+  Reset? bool in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileOpenAppend NXTFileOpenAppend returnValue 11  0 4 
+  NXTFileOpenAppend numeric uInt16  reference
+  "File Handle" numeric uInt8 reference
+  Filename  string  CStr  in
+  Length  numeric uInt32  reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawRect NXTDrawRect returnValue 12  3 4 
+  NXTDrawRect numeric int8  reference
+  Location cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Size cluster {2, "Width" = iW, "Height" = iW}  refInOut
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTCommLSWrite NXTCommLSWrite returnValue 13  0 4
+  NXTCommLSWrite numeric int8 reference
+  Port numeric uInt8 in
+  Buffer array  1 uInt8 handle  in
+  ReturnLength numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTCommLSCheckStatus NXTCommLSCheckStatus returnValue 14 0 3
+  NXTCommLSCheckStatus numeric int8 reference
+  Port numeric uInt8 in
+  BytesReady numeric uInt8 reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTCommLSRead NXTCommLSRead returnValue 15  0 4
+  NXTCommLSRead numeric int8 reference
+  Port numeric uInt8 in
+  Buffer array  1 uInt8 handle  out
+  BufferLength numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTDrawGraphic NXTDrawGraphic returnValue 16  4 5 
+  NXTDrawGraphic numeric int8  reference
+  Location cluster {2, "X" = iW, "Y" = iW}  refInOut
+  Filename  string  CStr  in
+  Variables array  1 iL handle  in
+  Options numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileResolveHandle NXTFileResolveHandle returnValue 17  0 4 
+  NXTFileResolveHandle numeric uInt16  reference
+  "File Handle" numeric uInt8 reference
+  "Write Handle?" bool reference
+  Filename  string  CStr  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileDelete NXTFileDelete returnValue 18  0 2 
+  NXTFileDelete numeric uInt16  reference
+  Filename  string  CStr  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTFileRename NXTFileRename returnValue 19  0 3 
+  NXTFileRename numeric uInt16  reference
+  "Old Filename"  string  CStr  in
+  "New Filename"  string  CStr  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTSoundPlayTone  NXTSoundPlayTone  returnValue 20 0 5 
+  NXTSoundPlayTone  numeric int8  reference
+  Frequency numeric uInt16 in
+  Duration numeric uInt16 in
+  Loop? bool in
+  Volume numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTSoundGetState  NXTSoundGetState  returnValue 21 1 2
+  NXTSoundGetState  numeric uInt8  reference
+  Flags numeric uInt8 reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTSoundSetState  NXTSoundSetState  returnValue 22 1 3
+  NXTSoundSetState  numeric uInt8  reference
+  State numeric uInt8 in
+  Flags numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTRandomNumber  NXTRandomNumber returnValue 23 0 1
+  NXTRandomNumber numeric int16 reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTSetScreenMode NXTSetScreenMode returnValue 24 1 2
+  NXTSetScreenMode numeric int8  reference
+  ScreenMode  numeric uInt32  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTGetStartTick  NXTGetStartTick returnValue 25 0 1
+  NXTGetStartTick numeric uInt32 reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTMessageWrite  NXTMessageWrite returnValue 26 0 3
+  NXTMessageWrite numeric int8 reference
+  QueueID numeric uInt8 in
+  Message  string  CStr  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTMessageRead  NXTMessageRead returnValue 27 2 4
+  NXTMessageRead numeric int8 reference
+  QueueID numeric uInt8 in
+  "Remove (T)" bool in
+  Message  string  CStr  out
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTCommBTCheckStatus NXTCommBTCheckStatus returnValue 28 0 2
+  NXTCommBTCheckStatus numeric int8 reference
+  Connection numeric uInt8 in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTCommBTWrite NXTCommBTWrite returnValue 29 0 3
+  NXTCommBTWrite numeric int8 reference
+  Connection numeric uInt8 in
+  Buffer array  1 uInt8 handle  in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTKeepAlive NXTKeepAlive returnValue 31 0 1
+  NXTKeepAlive numeric uInt32 reference
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTIOMapRead NXTIOMapRead returnValue 32 0 5
+  NXTIOMapRead numeric int8 reference
+  ModuleName string CStr in
+  Offset numeric uInt16 in
+  Count numeric uInt16 in
+  Buffer array 1 uInt8 handle out
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."
+
+method: NXTIOMapWrite NXTIOMapWrite returnValue 33 0 4
+  NXTIOMapWrite numeric int8 reference
+  ModuleName string CStr in
+  Offset numeric uInt16 in
+  Buffer array 1 uInt8 handle in
+  "Refer to the LabVIEW Toolkit for LEGO MINDSTORMS NXT Programming Guide for more information about this system call method."

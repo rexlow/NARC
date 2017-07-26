@@ -1,0 +1,2642 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>NXTHID Block</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../scripts.js"></script>
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+</head>
+<body onload="initialize();">
+<h1>NXTHID Remote</h1>
+<div class="box" style="">&nbsp; <br>
+NXTHID is a Human Interface Device, initiating commands from NXT. <br>
+<img src="images/moz-screenshot-39.jpg" alt=""><br>
+<br>
+<b>Inputs</b><b style=""><br>
+</b>Input Port <b style="">-</b>This is where you input the <st1:place><st1:placename>Input</st1:placename>
+<st1:placetype>Port</st1:placetype></st1:place> your NXTHID is
+attached to.<br>
+Transmit Mode- Specify if you want to use direct keyboard commands or
+have the HID type a written text.<br>
+If in Text Mode input a string in Text Data.<br>
+If in Direct Keyboard use Key Modifier annd Keydata.<br>
+For the Key Modifier<br>
+<table style="width: 179px; height: 256px;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td>0 </td>
+      <td> None</td>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td> Left Shift</td>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td> Left Ctrl</td>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td> Left Alt</td>
+    </tr>
+    <tr>
+      <td>4 </td>
+      <td> Left GUI</td>
+    </tr>
+    <tr>
+      <td>5 </td>
+      <td> Right Shift</td>
+    </tr>
+    <tr>
+      <td>6 </td>
+      <td> Right Ctrl</td>
+    </tr>
+    <tr>
+      <td>7 </td>
+      <td> Right Alt</td>
+    </tr>
+    <tr>
+      <td>8 </td>
+      <td> Right GUI</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+For Key Data<br>
+<table class="MsoNormalTable"
+ style="width: 3.75in; margin-left: 1.45in; border-collapse: collapse;"
+ border="0" cellpadding="0" cellspacing="0" width="360">
+  <tbody>
+    <tr style="height: 26.25pt;">
+      <td
+ style="border: 1pt solid windowtext; padding: 0in 5.4pt; background: silver none repeat scroll 0% 50%; width: 103.1pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 26.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Key Name<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: silver none repeat scroll 0% 50%; width: 166.9pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 26.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">HID Usage ID (hex value)<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">System Power<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">81<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">System Sleep<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">82<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">System Wake<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">83<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">No Event<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">00<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Overrun Error<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">01<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">POST Fail<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">02<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">ErrorUndefined<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">03<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">a A<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">04<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">b B<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">05<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">c C<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">06<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">d D<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">07<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">e E<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">08<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">f F<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">09<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">g G<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">h H<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">i I<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">j J<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">k K<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">l L<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">m M<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">10<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">n N<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">11<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">o O<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">12<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">p P<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">13<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">q Q<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">14<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">r R<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">15<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">s S<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">16<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">t T<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">17<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">u U<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">18<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">v V<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">19<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">w W<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">x X<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">y Y<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">z Z<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1 !<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2 @<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">1F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3 #<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">20<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4 $<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">21<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5 %<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">22<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6 ^<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">23<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7 &amp;<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">24<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8 *<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">25<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9 (<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">26<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">0 )<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">27<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Return<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">28<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Escape<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">29<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Backspace<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Tab<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Space<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">- _<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">= +<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">[ {<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">2F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">] }<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">30<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">\ |<span style="">&nbsp; </span><o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">31<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><st1:place
+ w:st="on"><span style="font-family: Arial;">Europe</span></st1:place><span
+ style="font-family: Arial;"> 1 <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">32<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">; :<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">33<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">' "<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">34<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">` ~<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">35<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">, &lt;<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">36<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">. &gt;<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">37<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">/ ?<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">38<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Caps Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">39<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F1<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F2<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F3<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F4<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F5<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F6<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">3F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F7<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">40<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F8<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">41<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F9<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">42<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F10<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">43<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F11<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">44<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F12<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">45<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Print Screen <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">46<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Scroll Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">47<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Break (Ctrl-Pause)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">48<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Pause<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">48<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Insert <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">49<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Home <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Page Up <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Delete <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">End <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Page Down <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Right Arrow <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">4F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Left Arrow <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">50<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Down Arrow <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">51<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Up Arrow <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">52<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Num Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">53<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad / <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">54<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad *<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">55<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad -<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">56<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad +<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">57<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad Enter<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">58<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 1 End<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">59<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 2 Down<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 3 PageDn<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 4 Left<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 5<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 6 Right<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 7 Home<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">5F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 8 Up<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">60<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 9 PageUp<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">61<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad 0 Insert<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">62<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad . Delete<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">63<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><st1:place
+ w:st="on"><span style="font-family: Arial;">Europe</span></st1:place><span
+ style="font-family: Arial;"> 2 <o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">64<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">App<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">65<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Power<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">66<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad =<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">67<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F13<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">68<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F14<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">69<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F15<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F16<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F17<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F18<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F19<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F20<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">6F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F21<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">70<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F22<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">71<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F23<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">72<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">F24<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">73<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Execute<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">74<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Help<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">75<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Menu<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">76<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Select<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">77<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Stop<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">78<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Again<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">79<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Undo<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Cut<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Copy<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Paste<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Find<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Mute<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">7F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Volume Up<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">80<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Volume Dn<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">81<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Locking Caps Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">82<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Locking Num Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">83<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Locking Scroll Lock<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">84<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keypad ,<br>
+(Brazilian Keypad .)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">85<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Equal Sign<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">86<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 1<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12429;</span><span
+ style="font-family: Arial;"><br>
+(Ro)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">87<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 63.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 63.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Intl'2<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12363;&#12383;&#12363;&#12394;</span><span
+ style="font-family: Arial;"><br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12402;&#12425;&#12364;&#12394;</span><span
+ style="font-family: Arial;"><br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12525;&#12540;&#12510;&#23383;</span><span
+ style="font-family: Arial;"><br>
+(Katakana/Hiragana)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 63.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">88<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 2<br>
+&yen;<br>
+(Yen)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">89<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 63.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 63.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 4<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#21069;&#20505;&#35036;</span><span
+ style="font-family: Arial;"><br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#22793;&#25563;</span><span
+ style="font-family: Arial;"> (</span><span
+ style="font-family: &quot;MS Gothic&quot;;">&#27425;&#20505;&#35036;</span><span
+ style="font-family: Arial;">)<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#20840;&#20505;&#35036;</span><span
+ style="font-family: Arial;"><br>
+(Henkan)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 63.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 5<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#28961;&#22793;&#25563;</span><span
+ style="font-family: Arial;"><br>
+(Muhenkan)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 6<br>
+(PC9800 Keypad , )<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 7<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 8<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Int'l 9<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">8F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 1<br>
+      </span><span style="font-family: Gulim;">&#54620;</span><span
+ style="font-family: Arial;">/</span><span style="font-family: Gulim;">&#50717;</span><span
+ style="font-family: Arial;"><br>
+(Hanguel/English)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">90<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 2<br>
+      </span><span style="font-family: Gulim;">&#54620;&#51088;</span><span
+ style="font-family: Arial;"><br>
+(Hanja)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">91<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 3<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12363;&#12383;&#12363;&#12394;</span><span
+ style="font-family: Arial;"><br>
+(Katakana)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">92<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 4<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#12402;&#12425;&#12364;&#12394;</span><span
+ style="font-family: Arial;"><br>
+(Hiragana)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">93<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 38.25pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 38.25pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 5<br>
+      </span><span style="font-family: &quot;MS Gothic&quot;;">&#21322;&#35282;</span><span
+ style="font-family: Arial;">/</span><span
+ style="font-family: &quot;MS Gothic&quot;;">&#20840;&#35282;</span><span
+ style="font-family: Arial;"><br>
+(Zenkaku/Hankaku)<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 38.25pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">94<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 6<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">95<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 7<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">96<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 8<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">97<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Lang 9<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">98<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Alternate Erase<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">99<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 25.5pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 25.5pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard SysReq/Attention<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 25.5pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9A<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Cancel<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9B<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Clear<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9C<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Prior<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9D<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Return<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9E<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Separator<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">9F<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Out<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A0<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Oper<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A1<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard Clear/Again<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A2<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard CrSel/Props<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A3<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Keyboard ExSel<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A4<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">RESERVED<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">A5-DF<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Left Control<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E0<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Left Shift<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E1<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Left Alt<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E2<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Left GUI<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E3<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Right Control<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E4<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Right Shift<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E5<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Right Alt<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E6<o:p></o:p></span></p>
+      </td>
+    </tr>
+    <tr style="height: 12.75pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 103.1pt; height: 12.75pt;"
+ width="137">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">Right GUI<o:p></o:p></span></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 166.9pt; height: 12.75pt;"
+ width="223">
+      <p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-family: Arial;">E7</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<b style=""><br>
+</b>
+<p> </p>
+<br>
+<h2>Sample Program</h2>
+<img src="images/moz-screenshot-37.jpg" alt="">
+<p>Sample located at<span style="color: rgb(51, 51, 255);"><br>
+..\mindsesnors.com
+LVHS\mindsensors.com Sample Programs\NXTHID-SP\NXTHID-Remote</span><span
+ style="color: rgb(51, 51, 255);"></span>
+</p>
+<span style="color: rgb(51, 51, 255);"><a
+ href="http://www.mindsensors.com/forum-LVHS-NXTHID.htm?launchExternal"><big><big><span
+ style="color: rgb(0, 0, 153);">Discuss Your Ideas&gt;&gt;</span></big></big></a></span><br>
+<br>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>LineLeader Block</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../scripts.js"></script>
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+</head>
+<body onload="initialize();">
+<h1>NXTLineLeader-Util Remote<br>
+</h1>
+<div class="box" style=""><st1:placename><br>
+</st1:placename>This program will allow yout to track a line when
+downloaded to the NXT diven its inputs and allows you to change the PID
+to perfect your NXT's line tracking based on its design.<br>
+<img
+ src="file:///C:/DOCUME%7E1/MINDSE%7E1/LOCALS%7E1/Temp/moz-screenshot-12.jpg"
+ alt=""><br>
+<br>
+<b>Inputs</b><span style="font-weight: bold;"><br>
+</span>Operation<br>
+Config PID Control - Configure Kp, Ki, Kd values for your robot
+design.<br>
+Wakeup - The sensor can be put to sleep (or goes to sleep after
+1
+minute of inactivity). The sensor wakes up on any command, however, use
+this command if you just want to wake it up, without any other
+operation.<br>
+Sleep - The sensor can be put to sleep using this command.<br>
+Take a Snapshot - keep on the line and ask sensor to 'remember'
+the line's width, and position. It also makes a note if the line is
+light or dark.<br>
+Invert Line - Specifically ask sensor to track a white line on
+dark background.<br>
+Reset Inversion - Reset previous inversion to default mode
+(dark
+line on light background)<br>
+Calibrate White - Calibrate the White color of sensor. When
+issuing this command, hold your sensor such that the sensor-window is
+fully over a white surface.<br>
+Calibrate Black - Calibrate the Black color of sensor. When
+issuing this command, hold your sensor such that the sensor-window is
+fully over a black surface.<br>
+Setpoint <span style="font-weight: bold;">- </span>the
+position
+of line to maintain.<br>
+Kp <span style="font-weight: bold;">- </span>the numerator value
+for the Kp<br>
+<span style="font-weight: bold;"></span>Kp<span
+ style="font-weight: bold;">_</span>factor <span
+ style="font-weight: bold;">- </span>the divisor
+factor for the Kp<br>
+Ki <span style="font-weight: bold;">- </span>the numerator value
+for the Ki<br>
+Ki<span style="font-weight: bold;">_</span>factor <span
+ style="font-weight: bold;">- </span>the divisor
+factor for the Ki <br>
+Kd <span style="font-weight: bold;">- </span>the numerator value
+for the Kd<br>
+Kd_factor <span style="font-weight: bold;">- </span>the divisor
+factor for the Kd <br>
+<br>
+<b>Outputs</b><st1:city><st1:place><b style=""><br>
+</b></st1:place></st1:city>Motor 1 Direction - For simple operation
+wire this to your left
+motor's direction plug.<br>
+Motor 1 Power - For simple operation wire this to your left
+motor's power plug.<br>
+Motor 2 Direction - For simple operation wire this to your right
+motor's direction plug.<br>
+Motor 2 Power - For simple operation wire this to your right
+motor's power plug.<br>
+Sensor Average- The average of all 8 sensors values.<br>
+<br>
+<h2>Sample Program</h2>
+<img src="images/moz-screenshot-38.jpg" alt="">
+<p>Sample located at<br>
+<span style="color: rgb(51, 51, 255);">C:\Documents and Settings\User
+Name\My Documents\LabVIEW Data\mindsesnors.com
+LVHS\mindsensors.com Sample
+Programs\NXTLineLeader-SP\NXTLineLeader-Remote</span><br>
+</p>
+<span style="color: rgb(51, 51, 255);"><a
+ href="http://www.mindsensors.com/forum-LVHS-NXTLineLeader.htm?launchExternal"><big><big><span
+ style="color: rgb(0, 0, 153);">Discuss Your Ideas&gt;&gt;</span></big></big></a></span><br>
+</div>
+</body>
+</html>

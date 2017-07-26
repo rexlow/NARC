@@ -1,0 +1,24 @@
+20/11
+
+Servo 1: Turun 5
+	 Tengah 60
+	 Naik 230
+
+Servo 2: Turun 82
+	 Tengah 0
+	 Naik 227
+	 Naik Habis 240
+
+Servo 3: Awal 5
+	 Tengah 67
+
+Servo 4: Awal 40
+	 Tengah 114
+
+Servo 5: Buka 0
+	 Tutup 200
+
+Servo 6: Naik 242
+	 Tengah 121
+	 Turun 5
+

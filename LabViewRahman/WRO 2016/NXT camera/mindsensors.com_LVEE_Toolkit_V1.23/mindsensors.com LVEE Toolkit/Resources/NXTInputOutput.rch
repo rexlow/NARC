@@ -1,0 +1,15 @@
+///// NXTInputOutput Type Definition /////
+genericType: NXTInputOutput
+genericTypeName: NXTInputOutput
+refnum: GenericTag
+sorted: yes
+adapt: yes
+matchExact: strict
+menuSelect: yes
+cleanup: idle
+calling: C
+passAttributeError: none
+passMethodError: none
+hasActiveProp: no
+passEventRegError: none
+

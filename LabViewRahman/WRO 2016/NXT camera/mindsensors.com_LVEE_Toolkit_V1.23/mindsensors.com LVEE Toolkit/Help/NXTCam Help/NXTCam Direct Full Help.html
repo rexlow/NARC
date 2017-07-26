@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>NXTCam Block</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../scripts.js"></script>
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+</head>
+<body onload="initialize();">
+<h1>NXTCam Direct<br>
+</h1>
+<div class="box" style="">
+<p style="font-weight: bold;"><img src="images/moz-screenshot-54.jpg"
+ alt=""></p>
+<b>Inputs</b><b style=""><br>
+</b> <st1:place><st1:placename>Input</st1:placename> <st1:placetype>Port</st1:placetype></st1:place>
+- This is where you input the <st1:place><st1:placename>Input</st1:placename>
+<st1:placetype>Port</st1:placetype></st1:place> your NXTCam is
+attached to.<br>
+Object ID-Object ID you want to track when your operation is
+'Get nth
+Object'. <br>
+Mode-The mode of operation of the NXT-CAM<br>
+<table border="1" cellpadding="2" cellspacing="2" width="100%">
+  <tbody>
+    <tr>
+      <td>Disable Tracking </td>
+      <td> stop the tracking, do this to conserve the
+battery power.</td>
+    </tr>
+    <tr>
+      <td>Get First Object </td>
+      <td> Upto 8 objects are tracked by NXTCam, for
+most applications first object is of utmost importance.</td>
+    </tr>
+    <tr>
+      <td>Get n th Object </td>
+      <td> For advanced applications to get a specific
+object.</td>
+    </tr>
+    <tr>
+      <td>Enable Tracking </td>
+      <td> when you are ready to start tracking your
+objects, this energizes the camera chip (consuming power) and begins
+processing the images.</td>
+    </tr>
+    <tr>
+      <td>Sort Objects by Size </td>
+      <td> the objects tracked could be of varying
+sizes, this option sorts them by the size before while processing the
+image. (Get First Object will return you the largest object). NXTCam
+captures image
+and
+analyzes it, and extracts 8 object from that image which will match the
+colors specified in colormap. Before returning the object info to you
+(coordinates and color), this
+command specifies how to sort them. (they are sorted by area of the
+object seen). So first object will be the largest object seen by
+NXTCam.
+      <div class="note"> </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Sort Objects by Colors </td>
+      <td> the objects tracked could be oc
+variying colors, this option sorts them by color while processing the
+image. (Get First Object will return you the object with color 1). The
+objects are sorted
+by
+the colors in the colormap. The objects matching color 1 will be
+in the beginning of the object array, followed by color 2...</td>
+    </tr>
+    <tr>
+      <td>
+      <div class="note"> </div>
+Illumination on </td>
+      <td> For future use.</td>
+    </tr>
+    <tr>
+      <td>Illumination off </td>
+      <td> For Future use.</td>
+    </tr>
+    <tr>
+      <td>Write Colormap </td>
+      <td> Write the Colormap to NXTCam memory.</td>
+    </tr>
+    <tr>
+      <td>Camera Settings </td>
+      <td> For advanced operations.</td>
+    </tr>
+    <tr>
+      <td>Line tracking mode </td>
+      <td> NXTCam supports Line Tracking mode and
+Object tracking mode. This option enables Line tracking mode.</td>
+    </tr>
+    <tr>
+      <td>Object tracking mode </td>
+      <td> This enables Object tracking mode on
+NXTCam. This is also the default mode (factory set).</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<b>Outputs</b><st1:city><st1:place><b style=""><br>
+</b>Total Objects-</st1:place></st1:city>Total number of objects found
+ranges from 0-8.<br>
+<st1:city><st1:place>Color-</st1:place></st1:city>Color number from the
+colormap of the current object
+identified<br>
+X Upper Left : The Upper left X coordinate of the objects'
+bounding box. The X coordinates range between 0 and 144.<br>
+Y Upper left : The Upper left Y coordinate of the objects'
+bounding box. The Y coordinates range between 0 and 88.<br>
+Y Lower right : The Lower right Y coordinate of the objects'
+bounding box.<br>
+X Lower right : The Lower right X coordinate of the objects'
+bounding box.<br>
+<st1:city><st1:place><br>
+</st1:place></st1:city><st1:city><st1:place><br>
+</st1:place></st1:city>
+<p> </p>
+<h2>Sample Program</h2>
+<p><img src="images/moz-screenshot-53.jpg" alt=""> </p>
+<p>Sample located at<br>
+<span style="color: rgb(51, 51, 255);">..</span><span
+ style="color: rgb(51, 51, 255);">\mindsesnors.com
+LVHS\mindsensors.com Sample Programs\NXTCam-SP\NXTCam-Direct</span></p>
+<span style="color: rgb(51, 51, 255);"><a
+ href="http://www.mindsensors.com/forum-LVHS-NXTCam.htm?launchExternal"><big><big><span
+ style="color: rgb(0, 0, 153);">Discuss Your Ideas&gt;&gt;</span></big></big></a></span><br>
+<ol>
+</ol>
+</div>
+</body>
+</html>

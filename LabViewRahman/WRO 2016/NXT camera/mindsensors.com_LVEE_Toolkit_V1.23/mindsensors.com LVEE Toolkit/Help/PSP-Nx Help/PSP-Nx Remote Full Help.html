@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lean Block for PSP-Nx PS2 Controller Sensor</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../scripts.js"></script><!--[if lt IE 7]>
+
+<script type="text/javascript" src="../pngfix.js"></script>
+
+<![endif]-->
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+</head>
+<body onload="initialize();">
+<!--[if IE]>
+
+	<iframe src="ienotice.html" frameborder="0" scrolling="No" allowtransparency="true" id="ienotice_frame" /></iframe>	
+
+	<![endif]-->
+<h1>PSP-Nx Remote<br>
+</h1>
+<div class="box" style="">
+<p>This block communicates with a PS2 controller using PSP-Nx interface
+sensor. It returns the four joystick positions, as well as the state of
+the 16 buttons on the PS2 controller (pressed or unpressed).<br>
+</p>
+<h2><img src="images/moz-screenshot-31.jpg" alt="">
+</h2>
+<b>Inputs</b><b style=""><br>
+</b><st1:place><st1:placename>Connection</st1:placename></st1:place> -
+This is where you input the <st1:place><st1:placename>Input</st1:placename>
+<st1:placetype>Port</st1:placetype></st1:place> your PSP-Nx is
+attached to.<br>
+<st1:place><st1:placename>Address</st1:placename></st1:place>
+-
+This is where you input the address of <st1:place><st1:placetype></st1:placetype></st1:place>
+your PSP-Nx , the factory default is 2.<br>
+<br>
+<b>Outputs</b><st1:city><st1:place><b style=""><br>
+</b>Left X &amp; Y abd Right X &amp; Y are the values of the joysticks.<br>
+The booleans are the individual button values if the button is pressed
+it
+will be true if not it will be false.<br>
+</st1:place></st1:city>
+<p> </p>
+<br>
+<h2>Sample Program</h2>
+<img src="images/moz-screenshot-32.jpg" alt="">
+<p>Sample located at<br>
+<span style="color: rgb(51, 51, 255);">C:\Documents and Settings\User
+Name\My Documents\LabVIEW Data\</span><span
+ style="color: rgb(51, 51, 255);">mindsesnors.com
+LVHS\mindsensors.com Sample Programs\PSP-Nx-SP\</span><span
+ style="color: rgb(51, 51, 255);">PSP-Nx-Remote</span><br>
+</p>
+<span style="color: rgb(51, 51, 255);"><a
+ href="http://www.mindsensors.com/forum-LVHS-PSP-Nx.htm?launchExternal"><big><big><span
+ style="color: rgb(0, 0, 153);">Discuss Your Ideas&gt;&gt;</span></big></big></a></span></div>
+</body>
+</html>

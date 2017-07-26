@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>SumoEyes Block</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../scripts.js"></script>
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+  <style type="text/css"> body { font: 80%/120% Verdana, Arial, Helvetica, sans-serif; padding-bottom: 30px; } </style>
+</head>
+<body onload="initialize();">
+<h1>NXTSumoEyes Dual<br>
+</h1>
+<div class="box" style="">NXTSumoEyes Sensor is able to detect obstacle
+in zones and ranges as
+shown in
+picture below.<br>
+The Short range is about 4.5 inches (11.5 cm), and Long Range is about
+10 incles (about 25 cm).<br>
+This distance changes based on reflectivity of the obstacle, e.g. a
+white
+paper obstacle is detectable at a farther distance than a dark object.<br>
+<br>
+<img src="images/SumoEyes-view-cone.PNG" alt=""><br>
+<br>
+<img src="../Images/NXTSumoEyes2.jpg" alt=""><img
+ src="images/moz-screenshot-50.jpg" alt=""><b><br>
+</b><b>Inputs</b><b style=""><br>
+</b>Input Port<b style="">-</b>This is where you input the <st1:place><st1:placename>Input</st1:placename>
+<st1:placetype>Port</st1:placetype></st1:place> your NXTSumoEyes is
+attached to.<br>
+Input of NXTSumoEyes (cluster) includes...<br>
+Select Range - Specify long or short range.<br>
+<br>
+<b>Outputs</b><b style=""><br>
+</b>Output of NXTSumoEyes (cluster) includes...<br>
+Which Zone?<br>
+<table style="width: 259px; height: 116px;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Front</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+Scaled Value<span style="font-weight: bold;">- </span>Value
+returned from the sensor, the values are returned as
+follows:<br>
+<table style="width: 284px; height: 88px;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td>Obstacle detected on left side</td>
+      <td> 30-36</td>
+    </tr>
+    <tr>
+      <td>Obstacle detected on right side</td>
+      <td> 63-69</td>
+    </tr>
+    <tr>
+      <td>Obstacle detected in front</td>
+      <td> 74-80</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h2>Sample Program</h2>
+<img src="../Images/NXTSumoEyes1.jpg" alt="">
+<p>Sample located at<br>
+<span style="color: rgb(51, 51, 255);"></span><span
+ style="color: rgb(51, 51, 255);">..\mindsesnors.com
+LVEE\mindsensors.com Sample Programs\NXTSumoEyes-SP\NXTSumoEyes-Dual</span>
+</p>
+<span style="color: rgb(51, 51, 255);"><a
+ href="http://www.mindsensors.com/forum-LVHS-NXTSumoEyes.htm?launchExternal"><big><big><span
+ style="color: rgb(0, 0, 153);">Discuss Your Ideas&gt;&gt;</span></big></big></a></span>
+<br>
+</div>
+</body>
+</html>
