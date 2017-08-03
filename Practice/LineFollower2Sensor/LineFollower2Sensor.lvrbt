@@ -9,6 +9,7 @@
 	<Item Name="Robo_Programs" Type="Folder">
 		<Item Name="line-follower.vi" Type="VI" URL="../Robo_Programs/line-follower.vi"/>
 		<Item Name="LineFollowerPID.vi" Type="VI" URL="../Robo_Programs/LineFollowerPID.vi"/>
+		<Item Name="RotateRight.vi" Type="VI" URL="../Robo_Programs/RotateRight.vi"/>
 		<Item Name="run.vi" Type="VI" URL="../Robo_Programs/run.vi"/>
 		<Item Name="run2.vi" Type="VI" URL="../Robo_Programs/run2.vi"/>
 	</Item>
