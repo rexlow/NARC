@@ -19,6 +19,7 @@
 		<Item Name="MoveToArena2.vi" Type="VI" URL="../Robo_Programs/MoveToArena2.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
 		<Item Name="RotateRight.vi" Type="VI" URL="../Robo_Programs/RotateRight.vi"/>
+		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
 		<Item Name="SimpleGyro.vi" Type="VI" URL="../Robo_Programs/SimpleGyro.vi"/>
 		<Item Name="TestSpeed.vi" Type="VI" URL="../Robo_Programs/TestSpeed.vi"/>
 		<Item Name="Vision.vi" Type="VI" URL="../Robo_Programs/Vision.vi"/>
