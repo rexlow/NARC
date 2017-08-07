@@ -7,6 +7,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Robo_Programs" Type="Folder">
+		<Item Name="LineFollower.vi" Type="VI" URL="../Robo_Programs/LineFollower.vi"/>
 		<Item Name="Master.vi" Type="VI" URL="../Robo_Programs/Master.vi"/>
 		<Item Name="MoveForwardInfinitely.vi" Type="VI" URL="../Robo_Programs/MoveForwardInfinitely.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
