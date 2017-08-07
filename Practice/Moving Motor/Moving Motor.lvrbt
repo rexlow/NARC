@@ -7,20 +7,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Robo_Programs" Type="Folder">
-		<Item Name="Daisy Chain 1.vi" Type="VI" URL="../Robo_Programs/Daisy Chain 1.vi"/>
-		<Item Name="LargeMotor.vi" Type="VI" URL="../Robo_Programs/LargeMotor.vi"/>
-		<Item Name="LiftBlock.vi" Type="VI" URL="../Robo_Programs/LiftBlock.vi"/>
-		<Item Name="LineFollower.vi" Type="VI" URL="../Robo_Programs/LineFollower.vi"/>
-		<Item Name="LineFollower2Sensor.vi" Type="VI" URL="../Robo_Programs/LineFollower2Sensor.vi"/>
 		<Item Name="Master.vi" Type="VI" URL="../Robo_Programs/Master.vi"/>
-		<Item Name="Move Robot.vi" Type="VI" URL="../Robo_Programs/Move Robot.vi"/>
 		<Item Name="MoveForwardInfinitely.vi" Type="VI" URL="../Robo_Programs/MoveForwardInfinitely.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
-		<Item Name="RotateRight.vi" Type="VI" URL="../Robo_Programs/RotateRight.vi"/>
 		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
-		<Item Name="SimpleGyro.vi" Type="VI" URL="../Robo_Programs/SimpleGyro.vi"/>
-		<Item Name="TestSpeed.vi" Type="VI" URL="../Robo_Programs/TestSpeed.vi"/>
-		<Item Name="Vision.vi" Type="VI" URL="../Robo_Programs/Vision.vi"/>
 	</Item>
 	<Item Name="Robo_Schema" Type="Folder">
 		<Item Name="robo_schema.bin" Type="Document" URL="../robo_schema.bin"/>
