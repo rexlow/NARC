@@ -7,6 +7,8 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Robo_Programs" Type="Folder">
+		<Item Name="b2b.vi" Type="VI" URL="../Robo_Programs/b2b.vi"/>
+		<Item Name="letak-cube.vi" Type="VI" URL="../Robo_Programs/letak-cube.vi"/>
 		<Item Name="LineFollower.vi" Type="VI" URL="../Robo_Programs/LineFollower.vi"/>
 		<Item Name="Master.vi" Type="VI" URL="../Robo_Programs/Master.vi"/>
 		<Item Name="Master2.vi" Type="VI" URL="../Robo_Programs/Master2.vi"/>
