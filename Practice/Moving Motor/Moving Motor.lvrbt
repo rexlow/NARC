@@ -9,6 +9,7 @@
 	<Item Name="Robo_Programs" Type="Folder">
 		<Item Name="LineFollower.vi" Type="VI" URL="../Robo_Programs/LineFollower.vi"/>
 		<Item Name="Master.vi" Type="VI" URL="../Robo_Programs/Master.vi"/>
+		<Item Name="Master2.vi" Type="VI" URL="../Robo_Programs/Master2.vi"/>
 		<Item Name="MoveForwardInfinitely.vi" Type="VI" URL="../Robo_Programs/MoveForwardInfinitely.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
 		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
