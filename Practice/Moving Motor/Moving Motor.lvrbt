@@ -14,6 +14,7 @@
 		<Item Name="Master2.vi" Type="VI" URL="../Robo_Programs/Master2.vi"/>
 		<Item Name="MoveForwardInfinitely.vi" Type="VI" URL="../Robo_Programs/MoveForwardInfinitely.vi"/>
 		<Item Name="optz.vi" Type="VI" URL="../Robo_Programs/optz.vi"/>
+		<Item Name="PID.vi" Type="VI" URL="../Robo_Programs/PID.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
 		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
 	</Item>
