@@ -12,11 +12,14 @@
 		<Item Name="LineFollower.vi" Type="VI" URL="../Robo_Programs/LineFollower.vi"/>
 		<Item Name="Master.vi" Type="VI" URL="../Robo_Programs/Master.vi"/>
 		<Item Name="Master2.vi" Type="VI" URL="../Robo_Programs/Master2.vi"/>
+		<Item Name="Master3.vi" Type="VI" URL="../Robo_Programs/Master3.vi"/>
 		<Item Name="MoveForwardInfinitely.vi" Type="VI" URL="../Robo_Programs/MoveForwardInfinitely.vi"/>
 		<Item Name="optz.vi" Type="VI" URL="../Robo_Programs/optz.vi"/>
 		<Item Name="PID.vi" Type="VI" URL="../Robo_Programs/PID.vi"/>
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
+		<Item Name="Rotate.vi" Type="VI" URL="../Robo_Programs/Rotate.vi"/>
 		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
+		<Item Name="Test.vi" Type="VI" URL="../Robo_Programs/Test.vi"/>
 	</Item>
 	<Item Name="Robo_Schema" Type="Folder">
 		<Item Name="robo_schema.bin" Type="Document" URL="../robo_schema.bin"/>
