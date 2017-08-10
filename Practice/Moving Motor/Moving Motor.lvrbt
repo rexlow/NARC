@@ -19,6 +19,7 @@
 		<Item Name="ReadGyro.vi" Type="VI" URL="../Robo_Programs/ReadGyro.vi"/>
 		<Item Name="Rotate.vi" Type="VI" URL="../Robo_Programs/Rotate.vi"/>
 		<Item Name="servo-arm.vi" Type="VI" URL="../Robo_Programs/servo-arm.vi"/>
+		<Item Name="Stack.vi" Type="VI" URL="../Robo_Programs/Stack.vi"/>
 		<Item Name="Test.vi" Type="VI" URL="../Robo_Programs/Test.vi"/>
 	</Item>
 	<Item Name="Robo_Schema" Type="Folder">
